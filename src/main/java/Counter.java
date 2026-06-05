@@ -14,33 +14,32 @@ public class Counter {
 		count++;
 	}
 	
-	public void increaseBy(int i) {
-		count+=i;
+	public void increaseBy(int amount) {
+		count += amount;
 	}
 	
 	public void decrement() {
 		count--;
 	}
 	
-	public void decreaseBy(int i) {
-		count-=i;
+	public void decreaseBy(int amount) {
+		count -= amount;
 	}
 	
-	public void multiplyBy(int i){
-		count = count * i;
+	public void multiplyBy(int factor) {
+		count *= factor;
 	}
 	
-	public void triple(){
-		int i = 3;
-		multiplyBy(i);
+	public void triple() {
+		multiplyBy(3);
 	}
 
-	public void powerBy(int i){
-		count = count ^ i;
+	public void powerBy(int exponent) {
+		count = (int) Math.pow(count, exponent);
 	}
 	
-	public boolean isCountEven(){
-		return count%2 == 0;
+	public boolean isCountEven() {
+		return count % 2 == 0;
 	}
 	
 	public int getCount() {
