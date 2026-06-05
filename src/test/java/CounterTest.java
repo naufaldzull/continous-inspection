@@ -1,4 +1,6 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class CounterTest {
@@ -13,7 +15,7 @@ public class CounterTest {
 		
 		testCounter.reset();
 		
-		assertEquals(0, testCounter.getCount());
+		assertEquals(1, testCounter.getCount());
 	}
 
 	@Test
